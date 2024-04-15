@@ -36,12 +36,12 @@ function solve(){
             console.log(element);
             body.innerHTML+=`<tr>
             <th>${element[0]}</th>
-            <th>${element[1]}</th>
+            <th>${element[1]/1000}</th>
         </tr>`
         });
         body.innerHTML+=` <tr>
         <th>Total</th>
-        <th>${obj2-obj1}</th>
+        <th>${(obj2-obj1)/1000}</th>
     </tr>`
     })
 }
