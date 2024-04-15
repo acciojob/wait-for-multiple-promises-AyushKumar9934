@@ -1,25 +1,28 @@
 //your JS code here. If required.
 const pro1=()=>{
+	let time = Math.random() * 2000 + 1000;
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            resolve(['promise1',1002])
-        },1002)
+            resolve(['Promise 1',time])
+        },time)
     })
 }
 
 const pro2=()=>{
+	let time = Math.random() * 2000 + 1000;
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            resolve(["promise2",2002])
+            resolve(["Promise 2",time])
         },2002)
     })
 }
 
 
 const pro3=()=>{
+	let time = Math.random() * 2000 + 1000;
     return new Promise((resolve,reject)=>{
         setTimeout(()=>{
-            resolve(["promise3",2052])
+            resolve(["Promise 3",time])
         },2052)
     })
 }
